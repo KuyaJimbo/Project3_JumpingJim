@@ -1,3 +1,16 @@
+Jumping Jim
+-----------
+
+Jumping Jim is a C++ program that finds a path from the bottom right of a matrix to the top left using Depth First Search (DFS). In this matrix, each cell contains a value indicating the maximum jump distance in four directions (North, South, West, East).
+
+### How to Run
+
+To compile and run the program, use the following commands in your terminal:
+g++ *.cpp -o jumpingjim
+- Or, if you encounter issues with C++11 features: g++ -std=c++11 -o jumpingjim *.cpp
+
+Then, execute the compiled program:
+./jumpingjim
 
 ### Input File
 
@@ -19,4 +32,18 @@ The program outputs the result to a file named `output.txt`. If a path from the 
 ### Example
 
 For example, given the following input in `input.txt`:
+7 7
+3 6 4 3 2 4 3
+2 1 2 3 2 5 2
+2 3 4 3 4 2 3
+2 4 4 3 4 2 2
+4 5 1 3 2 5 4
+4 3 2 2 4 5 6
+2 5 2 5 6 1 0
 
+The output in `output.txt` should be:
+E S S N S W E N W E E W S E N W S E
+
+This indicates a working path from the top right to the bottom left.
+
+--- 
