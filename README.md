@@ -35,6 +35,7 @@ The program outputs the result to a file named `output.txt`. If a path from the 
 
 The output in `output.txt` for the input.txt above should be:<br />
 E S S N S W E N W E E W S E N W S E<br />
+
 This indicates a working path from the top right to the bottom left.
 
 ### Code Structure
