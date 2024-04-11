@@ -31,7 +31,7 @@ The program outputs the result to a file named `output.txt`. If a path from the 
 
 ### Example
 
-For example, given the following input in `input.txt`:
+For example, given the following input in `input.txt`:<br />
 7 7<br />
 3 6 4 3 2 4 3<br />
 2 1 2 3 2 5 2<br />
@@ -41,7 +41,7 @@ For example, given the following input in `input.txt`:
 4 3 2 2 4 5 6<br />
 2 5 2 5 6 1 0<br />
 
-The output in `output.txt` should be:
+The output in `output.txt` should be:<br />
 E S S N S W E N W E E W S E N W S E
 
 This indicates a working path from the top right to the bottom left.
