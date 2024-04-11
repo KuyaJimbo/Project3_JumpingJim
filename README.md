@@ -1,7 +1,8 @@
 Jumping Jim
 -----------
+This project revolves around the "Jumping Jim" maze problem, a challenging puzzle where Jumping Jim navigates through a maze of trampolines, each marked with a number indicating the distance Jim will move when bouncing off it. The goal is for Jim to traverse from the upper left corner to the lower right corner of the maze. In this matrix, each cell represents a trampoline and contains a value indicating the maximum jump distance in four directions (North, South, West, East).
 
-Jumping Jim is a C++ program that finds a path from the bottom right of a matrix to the top left using Depth First Search (DFS). In this matrix, each cell contains a value indicating the maximum jump distance in four directions (North, South, West, East).
+I solved this by modeling the problem as a graph with an adjacency list representation and using a DFS algorithm to search for the path to the bottom right corner.
 
 ### How to Run
 
