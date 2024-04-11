@@ -34,14 +34,13 @@ The program expects the input data to be provided in a file named `input.txt`. T
 The program outputs the result to a file named `output.txt`. If a path from the bottom right to the top left exists, the output file contains the sequence of directions (N, S, W, E) representing the path. If no such path exists, it prints "No path found".
 
 The output in `output.txt` for the input.txt above should be:<br />
-E S S N S W E N W E E W S E N W S E
+E S S N S W E N W E E W S E N W S E<br />
+This indicates a working path from the top right to the bottom left.
 
 ### Code Structure
 
 - **Cell Class**: Represents a cell in the matrix, storing its row, column, and the direction of the jump to reach that cell.
 - **DFS Function**: Implements Depth First Search to find a path from the bottom right to the top left of the matrix.
 - **Main Function**: Reads input from `input.txt`, constructs an adjacency list representing neighbors for each cell, performs DFS, and writes the result to `output.txt`.
-
-This indicates a working path from the top right to the bottom left.
 
 --- 
