@@ -32,14 +32,14 @@ The program outputs the result to a file named `output.txt`. If a path from the 
 ### Example
 
 For example, given the following input in `input.txt`:
-7 7
-3 6 4 3 2 4 3
-2 1 2 3 2 5 2
-2 3 4 3 4 2 3
-2 4 4 3 4 2 2
-4 5 1 3 2 5 4
-4 3 2 2 4 5 6
-2 5 2 5 6 1 0
+7 7<br />
+3 6 4 3 2 4 3<br />
+2 1 2 3 2 5 2<br />
+2 3 4 3 4 2 3<br />
+2 4 4 3 4 2 2<br />
+4 5 1 3 2 5 4<br />
+4 3 2 2 4 5 6<br />
+2 5 2 5 6 1 0<br />
 
 The output in `output.txt` should be:
 E S S N S W E N W E E W S E N W S E
