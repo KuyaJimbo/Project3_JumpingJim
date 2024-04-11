@@ -5,11 +5,12 @@ Jumping Jim is a C++ program that finds a path from the bottom right of a matrix
 
 ### How to Run
 
-To compile and run the program, use the following commands in your terminal:
+To compile and run the program, use the following commands in your terminal:<br />
 g++ *.cpp -o jumpingjim
-- Or, if you encounter issues with C++11 features: g++ -std=c++11 -o jumpingjim *.cpp
+- Or, if you encounter issues with C++11 features:
+  g++ -std=c++11 -o jumpingjim *.cpp
 
-Then, execute the compiled program:
+Then, execute the compiled program:<br />
 ./jumpingjim
 
 ### Input File
