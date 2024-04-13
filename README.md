@@ -1,8 +1,20 @@
 Jumping Jim
 -----------
-This project revolves around the "Jumping Jim" maze problem, a challenging puzzle where Jumping Jim navigates through a maze of trampolines, each marked with a number indicating the distance Jim will move when bouncing off it. The goal is for Jim to traverse from the upper left corner to the lower right corner of the maze. In this matrix, each cell represents a trampoline and contains a value indicating the maximum jump distance in four directions (North, South, West, East).
+This project revolves around the "Jumping Jim" maze problem, a challenging puzzle where Jumping Jim navigates through a maze of trampolines, each marked with a number indicating the distance Jim will move when bouncing off it in adjacent directions (N, S, W, E). The goal is for Jim to traverse from the upper left corner to the lower right corner of the maze.
 
 I solved this by modeling the problem as a graph with an adjacency list representation and using a DFS algorithm to search for the path to the bottom right corner.
+
+0) Create a Cell object which represents a reachable Trampoline and keeps track of that trampoline's id, row, column, and direction to reach the column.
+1) Create a 2D Matrix based on the input to represent the maze of trampolines. 
+2) Create an adjacency list hashtable using a key-value pair of int (id/key) and list of reachable trampolines as Cell objects.
+3) Populate the adjacency list by first assigning a id/key to a trampoline and adding the reachable neighbors as Cell objects to its neighbor list onto the adjacency list.
+4) Create a visited hashtable using a key-valye pair of int (id/key) and a boolean (if visited?) to improve time complexity with dynamic programming while using DFS.
+   - This is better than a matrix as it mitigates space cost if trampolines are unreachable (will never be visited)
+5) Create a 2D char list called path to keep track of the path from the start to end.
+6) Run DFS starting from the top left corner of the matrix (id=0) and consider all of its neighbors and their neighbors and so on until a path to the bottom right is found.
+   - This demonstrates the benefit of using an adjacency list since only the true neighbors are considered with a faster lookup time.
+   - After finding the bottom-right goal square (base case), each DFS call leading up to it adds the move required to the back of the path list and returns true to denote a pass was found.
+8) Finally, the path will be stored in the path list and simply needs to be written onto the output file.
 
 ### How to Run
 
