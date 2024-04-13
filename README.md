@@ -7,7 +7,7 @@ I solved this by modeling the problem as a graph with an adjacency list represen
 0) Create a Cell object which represents a reachable Trampoline and keeps track of that trampoline's id, row, column, and direction to reach the column.
 1) Create a 2D Matrix based on the input to represent the maze of trampolines. 
 2) Create an adjacency list hashtable using a key-value pair of int (id/key) and list of reachable trampolines as Cell objects.
-3) Populate the adjacency list by first assigning a id/key to a trampoline and adding the reachable neighbors as Cell objects to its neighbor list onto the adjacency list.
+3) Populate the adjacency list by first assigning a id/key to a trampoline and adding the reachable neighbors as Cell objects to its neighbor list.
 4) Create a visited hashtable using a key-valye pair of int (id/key) and a boolean (if visited?) to improve time complexity with dynamic programming while using DFS.
    - This is better than a matrix as it mitigates space cost if trampolines are unreachable (will never be visited)
 5) Create a 2D char list called path to keep track of the path from the start to end.
