@@ -68,7 +68,7 @@ bool dfs(unordered_map<int, bool>& visited, unordered_map<int, vector<Cell>>& ad
 
 int main() {
     // ----------------- Set up the input file -----------------
-    ifstream inputFile("jim-input.txt");
+    ifstream inputFile("input.txt");
     
     // Check if the file is opened successfully
     if (!inputFile) {
