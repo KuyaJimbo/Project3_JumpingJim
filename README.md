@@ -4,17 +4,17 @@ This project revolves around the "Jumping Jim" maze problem, a challenging puzzl
 
 I solved this by modeling the problem as a graph with an adjacency list representation and using a DFS algorithm to search for the path to the bottom right corner.
 
-0) Create a Cell object which represents a reachable Trampoline and keeps track of that trampoline's id, row, column, and direction to reach the column.
-1) Create a 2D Matrix based on the input to represent the maze of trampolines. 
-2) Create an adjacency list hashtable using a key-value pair of int (id/key) and list of reachable trampolines as Cell objects.
+0) Create a **Cell class** which represents a reachable Trampoline and keeps track of that trampoline's id, row, column, and direction to reach the column.
+1) Create a **2D Matrix** based on the input from **input.txt** to represent the maze of trampolines. 
+2) Create an **adjacency list** hashtable using a key-value pair of int (id/key) and list of reachable trampolines as Cell objects.
 3) Populate the adjacency list by first assigning a id/key to a trampoline and adding the reachable neighbors as Cell objects to its neighbor list.
-4) Create a visited hashtable using a key-valye pair of int (id/key) and a boolean (if visited?) to improve time complexity with dynamic programming while using DFS.
-   - This is better than a matrix as it mitigates space cost if trampolines are unreachable (will never be visited)
-5) Create a 2D char list called path to keep track of the path from the start to end.
-6) Run DFS starting from the top left corner of the matrix (id=0) and consider all of its neighbors and their neighbors and so on until a path to the bottom right is found.
+4) Create a **visited** hashtable using a key-valye pair of int (id/key) and a boolean (if visited?) to improve time complexity with dynamic programming while using DFS.
+   - This is better than using a 2D matrix as it mitigates space cost if trampolines are unreachable (never visited during DFS)
+5) Create a **path** character list to keep track of the path from the start to end.
+6) Run **DFS** starting from the top left corner of the matrix (id=0) and consider all of its neighbors and their neighbors and so on until a path to the bottom right is found.
    - This demonstrates the benefit of using an adjacency list since only the true neighbors are considered with a faster lookup time.
    - After finding the bottom-right goal square (base case), each DFS call leading up to it adds the move required to the back of the path list and returns true to denote a pass was found.
-8) Finally, the path will be stored in the path list and simply needs to be written onto the output file.
+8) Finally, the path will be stored in the path list and simply needs to be written onto the **output.txt**.
 
 ### How to Run
 
@@ -54,6 +54,7 @@ This indicates a working path from the top right to the bottom left.
 ### Code Structure
 
 - **Cell Class**: Represents a cell in the matrix, storing its row, column, and the direction of the jump to reach that cell.
+- **Adjacency List**: Efficient Graph Representation with quicker access time of trampolines and their neighbors for the path.
 - **DFS Function**: Implements Depth First Search to find a path from the top left to the bottom right of the matrix.
 - **Main Function**: Reads input from `input.txt`, constructs an adjacency list representing neighbors for each cell, performs DFS, and writes the result to `output.txt`.
 
