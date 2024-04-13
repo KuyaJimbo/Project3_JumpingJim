@@ -54,7 +54,7 @@ This indicates a working path from the top right to the bottom left.
 ### Code Structure
 
 - **Cell Class**: Represents a cell in the matrix, storing its row, column, and the direction of the jump to reach that cell.
-- **DFS Function**: Implements Depth First Search to find a path from the bottom right to the top left of the matrix.
+- **DFS Function**: Implements Depth First Search to find a path from the top left to the bottom right of the matrix.
 - **Main Function**: Reads input from `input.txt`, constructs an adjacency list representing neighbors for each cell, performs DFS, and writes the result to `output.txt`.
 
 --- 
